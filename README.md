@@ -68,7 +68,6 @@ All output figures are saved to the `output/` directory.
 - **Kruskal–Wallis H test**: multi-group comparison across ages
 - **Mann–Whitney U test**: pairwise comparisons with Bonferroni correction
 - **Effect sizes**: rank-biserial correlation (*r*) and Cohen's *d*
-- **Two-part (hurdle) model**: (1) logistic regression on detection probability, (2) Spearman correlation among expressing cells only
 
 ## References
 
