@@ -14,7 +14,7 @@ Single-cell RNA-seq analysis of **Grx2** (Glutaredoxin 1, gene symbol: *Grx1*) e
 ```
 ├── scripts/
 │   ├── 01_extract_and_normalize.py   # Grx1 extraction & CPM normalization
-│   ├── 02_statistical_analysis.py     # Spearman, Kruskal-Wallis, Mann-Whitney U, Two-part model
+│   ├── 02_statistical_analysis.py     # Spearman, Kruskal-Wallis, Mann-Whitney U
 │   └── 03_visualization.py            # Trajectory, heatmaps, dopaminergic analysis
 ├── requirements.txt
 └── README.md
