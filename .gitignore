@@ -1,0 +1,45 @@
+# ===== OS metadata =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Editor / IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# ===== Virtual environments =====
+venv/
+env/
+.venv/
+.env
+
+# ===== R =====
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# ===== Data & outputs (not tracked — downloaded/generated locally) =====
+data/
+output/
+*.h5ad
+*.mtx
+*.tar
+
+# ===== Jupyter =====
+*.ipynb_checkpoints
