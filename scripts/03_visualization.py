@@ -99,16 +99,15 @@ def plot_6panel(davie, lu, gene, filename):
 # Helper: trajectory plot (mean +/- SEM)
 # ========================================================
 def plot_trajectory(davie, lu, gene, filename, c1='#d62728', c2='#1f77b4'):
-    ds = davie.groupby(davie.columns[0]).agg(
+    ds = davie.groupby('Age').agg(
         mean_cpm=('cpm', 'mean'), sem_cpm=('cpm', 'sem')).reset_index()
     ls = lu.groupby('age').agg(
         mean_cpm=('cpm', 'mean'), sem_cpm=('cpm', 'sem')).reset_index()
 
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(14, 5.5))
-    acol_d = ds.columns[0]
 
     for ax, s, acol, color, mk, title in [
-        (a1, ds, acol_d, c1, 'o',
+        (a1, ds, 'Age', c1, 'o',
          f'Davie et al. (GSE107451)\n0-50 days, n={len(davie):,} cells'),
         (a2, ls, 'age', c2, 's',
          f'Lu et al.\n5-70 days, n={len(lu):,} cells'),
